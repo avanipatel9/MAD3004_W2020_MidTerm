@@ -18,4 +18,11 @@ class Bill {
     var billDate: Date
     var billType: BillType
     var totalBillAmount: Double
+    
+    init(billID: Int, billDate: Date, billType: BillType, totalBillAmount: Double) {
+        self.billID = billID
+        self.billDate = billDate
+        self.billType = billType
+        self.totalBillAmount = totalBillAmount
+    }
 }

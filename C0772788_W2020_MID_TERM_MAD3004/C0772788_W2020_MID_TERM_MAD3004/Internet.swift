@@ -11,10 +11,10 @@ class Internet: Bill {
     var providerName: String
     var internetGBUsed: Double
     
-    init(billID: Int, billDate: Date, billType: BillType, totalBillAmount: Double, providerName: String, internetGBUsed: Double)
+    init(billID: Int, billDate: Date, billType: BillType, providerName: String, internetGBUsed: Double)
     {
         self.providerName = providerName
         self.internetGBUsed = internetGBUsed
-        super.init(billID: billID, billDate: billDate, billType: billType, totalBillAmount: totalBillAmount)
+        super.init(billID: billID, billDate: billDate, billType: billType)
     }
 }

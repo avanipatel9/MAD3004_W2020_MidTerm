@@ -7,15 +7,13 @@
 //
 
 import Foundation
-class Hydro: Bill
-{
-    var providerName: String
-    var internetGBUsed: Double
+class Hydro: Bill {
+    var agencyName: String
+    var unitConsumed: Int
     
-    init(billID: Int, billDate: Date, billType: BillType, totalBillAmount: Double, providerName: String, internetGBUsed: Double)
-    {
-        self.providerName = providerName
-        self.internetGBUsed = internetGBUsed
+    init(billID: Int, billDate: Date, billType: BillType, totalBillAmount: Double, agencyName: String, unitConsumed: Int) {
+        self.agencyName=agencyName
+        self.unitConsumed=unitConsumed
         super.init(billID: billID, billDate: billDate, billType: billType, totalBillAmount: totalBillAmount)
     }
 }

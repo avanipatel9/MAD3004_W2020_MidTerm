@@ -9,5 +9,6 @@
 import Foundation
 class Internet
 {
-    
+    var agencyName: String
+    var unitConsumed: Int
 }

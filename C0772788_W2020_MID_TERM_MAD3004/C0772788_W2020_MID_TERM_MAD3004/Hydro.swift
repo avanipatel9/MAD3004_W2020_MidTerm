@@ -7,7 +7,8 @@
 //
 
 import Foundation
-class Hydro
+class Hydro: Bill
 {
-    
+    var providerName: String
+    var internetGBUsed: Double
 }

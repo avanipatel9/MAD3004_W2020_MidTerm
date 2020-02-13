@@ -9,5 +9,9 @@
 import Foundation
 class Mobile
 {
-    
+    var mobileManufacturerName: String
+    var planName: String
+    var mobileNumber: Int
+    var internetGBUsed: Double
+    var minuteUsed: Int
 }

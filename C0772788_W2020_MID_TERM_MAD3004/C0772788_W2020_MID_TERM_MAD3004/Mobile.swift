@@ -18,7 +18,7 @@ class Mobile: Bill
     var ratePerMinute: Double = 0.50
     
     
-    init(billID: Int, billDate: Date, billType: BillType, mobileManufacturerName: String, planName: String, mobileNumber: Int, internetGBUsed: Double, minuteUsed: Int) {
+    init(billID: String, billDate: Date, billType: BillType, mobileManufacturerName: String, planName: String, mobileNumber: Int, internetGBUsed: Double, minuteUsed: Int) {
         self.mobileManufacturerName=mobileManufacturerName
         self.planName=planName
         self.mobileNumber=mobileNumber

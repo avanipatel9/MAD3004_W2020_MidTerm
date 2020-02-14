@@ -15,23 +15,22 @@ enum BillType
 
 class Bill: CalculateBill, IDisplay {
     
-    var billID: Int
+    var billID: String
     var billDate: Date
     var billType: BillType
     var billAmount: Double = 0.0
     
-    init(billID: Int, billDate: Date, billType: BillType) {
+    init(billID: String, billDate: Date, billType: BillType) {
         self.billID = billID
         self.billDate = billDate
         self.billType = billType
     }
     
     func calculateTotalBill() {
-        <#code#>
+        
     }
     
     func dispaly() {
-        print("--------Bill Information--------")
         print("**********************************")
         print("Bill ID : \(billID)")
         print("Bill Date : \(billDate)")

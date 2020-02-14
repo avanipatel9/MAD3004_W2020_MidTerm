@@ -17,6 +17,7 @@ var i3 = Internet(billID: "NET003", billDate: Date(), billType: BillType.INTERNE
 var h1 = Hydro(billID: "HYD001", billDate: Date(), billType: BillType.HYDRO, agencyName: "Planet Energy", unitConsumed: 29)
 var h2 = Hydro(billID: "HYD002", billDate: Date(), billType: BillType.HYDRO, agencyName: "Planet Energy", unitConsumed: 50)
 
+
 var c1 = Customer(customerID: 1, firstName: "Avani", lastName: "Patel", emailID: "aghkggk@gmail.com")
 c1.addBill(bill: m1, billID: m1.billID)
 c1.addBill(bill: i1, billID: i1.billID)
@@ -34,3 +35,11 @@ c3.dispaly()
 
 var c4 = Customer(customerID: 4, firstName: "Jyothi", lastName: "Thomas", emailID: "cxnbfjf@gmail.com")
 c4.dispaly()
+
+var customers = [Customer]()
+customers.append(c1)
+customers.append(c2)
+customers.append(c3)
+customers.append(c4)
+
+

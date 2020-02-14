@@ -19,6 +19,7 @@ class Customer: IDisplay, CalculateBill
     var emailID:String
     lazy var bills = [String : Bill]()
     var totalBillToPay : Double = 0.0
+    var customers = [Customer]()
     
     init(customerID:Int, firstName:String, lastName:String, emailID:String) {
         self.customerID=customerID

@@ -28,6 +28,6 @@ class Hydro: Bill {
         calculateTotalBill()
         print("\t Bill Amount : \(billAmount.currency())")
         print("\t Agency Name : \(agencyName)")
-        print("\t Unit Consumed : \(unitConsumed)")
+        print("\t Unit Consumed : \(unitConsumed.units())")
     }
 }

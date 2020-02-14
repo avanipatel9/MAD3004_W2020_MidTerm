@@ -30,6 +30,12 @@ extension Int
         let s = String.init(format: "%d Minutes", self)
         return s
     }
+    
+    func units() -> String
+    {
+        let s = String.init(format: "%d Units", self)
+        return s
+    }
 }
 
 extension Date

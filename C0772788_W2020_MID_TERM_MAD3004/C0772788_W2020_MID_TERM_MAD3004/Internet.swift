@@ -25,7 +25,10 @@ class Internet: Bill {
     }
     
     override func dispaly() {
-        <#code#>
+        super.dispaly()
+        print("Bill Amount : \(billAmount)")
+        print("Provider Name : \(providerName)")
+        print("Internet Usage : \(internetGBUsed)")
     }
     
 }

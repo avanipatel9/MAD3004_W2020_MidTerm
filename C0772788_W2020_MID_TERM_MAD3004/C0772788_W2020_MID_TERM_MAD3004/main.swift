@@ -13,8 +13,9 @@ var i1 = Internet(billID: "NET001", billDate: Date(), billType: BillType.INTERNE
 var h1 = Hydro(billID: "HYD001", billDate: Date(), billType: BillType.HYDRO, agencyName: "Planet Energy", unitConsumed: 29)
 
 var c1 = Customer(customerID: 1, firstName: "Avani", lastName: "Patel", emailID: "aghkggk@gmail.com")
-
+var c2 = Customer(customerID: 2, firstName: "Charmi", lastName: "Patel", emailID: "gadgkgkg@gmail.com")
 c1.addBill(bill: m1, billID: m1.billID)
 c1.addBill(bill: i1, billID: i1.billID)
 c1.addBill(bill: h1, billID: h1.billID)
 c1.dispaly()
+c2.dispaly()

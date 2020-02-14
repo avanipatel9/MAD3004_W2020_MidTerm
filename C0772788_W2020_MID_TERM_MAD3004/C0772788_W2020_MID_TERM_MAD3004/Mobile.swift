@@ -40,7 +40,7 @@ class Mobile: Bill
         print("\t Plan Name : \(planName)")
         print("\t Mobile Number : \(mobileNumber)")
         print("\t Internet Usage : \(internetGBUsed.internetData())")
-        print("\t Minutes Usage : \(minuteUsed)")
+        print("\t Minutes Usage : \(minuteUsed.minutes())")
     }
     
 }

@@ -23,6 +23,15 @@ extension Double
     
 }
 
+extension Int
+{
+    func minutes() -> String
+    {
+        let s = String.init(format: "%d Minutes", self)
+        return s
+    }
+}
+
 extension Date
 {
 //    func dateFormatter() -> Date

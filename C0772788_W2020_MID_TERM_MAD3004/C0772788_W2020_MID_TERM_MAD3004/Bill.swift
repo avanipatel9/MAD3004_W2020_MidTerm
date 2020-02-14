@@ -13,7 +13,8 @@ enum BillType
     case INTERNET, MOBILE, HYDRO
 }
 
-class Bill {
+class Bill: CalculateBill, IDisplay {
+    
     var billID: Int
     var billDate: Date
     var billType: BillType
@@ -24,6 +25,15 @@ class Bill {
         self.billDate = billDate
         self.billType = billType
     }
+    
+    func calculateTotalBill() {
+        <#code#>
+    }
+    
+    func dispaly() {
+        <#code#>
+    }
+    
     
 
 }

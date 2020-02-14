@@ -11,10 +11,6 @@ class Hydro: Bill {
     var agencyName: String
     var unitConsumed: Int
     var ratePerUnit: Double = 20.0
-    var totalHydroBill : Double
-    {
-        self.calculateBillHydro()
-    }
     
     init(billID: Int, billDate: Date, billType: BillType, agencyName: String, unitConsumed: Int) {
         self.agencyName=agencyName
@@ -22,8 +18,12 @@ class Hydro: Bill {
         super.init(billID: billID, billDate: billDate, billType: billType)
     }
     
-    func calculateBillHydro()-> Double
+    override func calculateTotalBill()
     {
-        return Double(unitConsumed)*ratePerUnit
+        self.billAmount = Double(unitConsumed)*ratePerUnit
+    }
+    
+    override func dispaly() {
+        <#code#>
     }
 }

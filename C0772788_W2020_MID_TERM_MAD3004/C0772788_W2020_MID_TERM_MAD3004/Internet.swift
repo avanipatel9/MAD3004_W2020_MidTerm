@@ -19,10 +19,13 @@ class Internet: Bill {
         super.init(billID: billID, billDate: billDate, billType: billType)
     }
     
-    func calculateInternetBill()
+    override func calculateTotalBill()
     {
         self.billAmount = internetGBUsed*ratePerGB
     }
     
+    override func dispaly() {
+        <#code#>
+    }
     
 }

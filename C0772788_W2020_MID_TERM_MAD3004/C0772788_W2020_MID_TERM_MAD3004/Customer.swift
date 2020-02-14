@@ -40,26 +40,7 @@ class Customer: IDisplay
             print("Bill Type : \(bill.billType)")
             print("Bill Amount : \(bill.billAmount)")
             
-            switch bill.billType
-            {
-                case BillType.HYDRO:
-                    print("Agency Name : ")
-                    print("Unit Consumed : ")
-                
-                case BillType.INTERNET:
-                    print("Provider Name : ")
-                    print("Internet Usage : ")
-            
-                case BillType.MOBILE:
-                    print("Manufacturer Name : ")
-                    print("Plan Name : ")
-                    print("Mobile Number : ")
-                    print("Internet Usage : ")
-                    print("Minutes Usage : ")
-                default:
-                    ""
-                    //print("*************This Customer has no bills******************")
-            }
+           
             
             print("*********************************************")
             print("Total Bill Amount to Pay : ")

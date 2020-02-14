@@ -27,25 +27,23 @@ class Customer: IDisplay
         self.emailID=emailID
     }
     
+    func addBill(bill: Bill, customerID: Int)
+    {
+        bills.updateValue(bill, forKey: customerID)
+    }
+    
     func dispaly() {
         print("Customer ID : \(customerID)")
         print("Customer Name : \(fullName)")
         print("Customer Email ID : \(emailID)")
-        print("--------Bill Information--------")
-        print("**********************************")
+        
         for (billID, bill) in bills
         {
-            print("Bill ID : \(billID)")
-            print("Bill Date : \(bill.billDate)")
-            print("Bill Type : \(bill.billType)")
-            print("Bill Amount : \(bill.billAmount)")
-            
            
-            
-            print("*********************************************")
-            print("Total Bill Amount to Pay : ")
-            
         }
+        print("*********************************************")
+        print("Total Bill Amount to Pay : ")
+        print("*********************************************")
     }
 
 }

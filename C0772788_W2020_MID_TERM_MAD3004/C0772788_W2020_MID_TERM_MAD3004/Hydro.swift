@@ -24,6 +24,9 @@ class Hydro: Bill {
     }
     
     override func dispaly() {
-        <#code#>
+        super.dispaly()
+        print("Bill Amount : \(billAmount)")
+        print("Agency Name : \(agencyName)")
+        print("Unit Consumed : \(unitConsumed)")
     }
 }

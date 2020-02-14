@@ -31,6 +31,8 @@ class Bill: CalculateBill, IDisplay {
     }
     
     func dispaly() {
+        print("--------Bill Information--------")
+        print("**********************************")
         print("Bill ID : \(billID)")
         print("Bill Date : \(billDate)")
         print("Bill Type : \(billType)")

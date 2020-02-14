@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Customer: IDisplay
+class Customer: IDisplay, CalculateBill
 {
     var customerID:Int
     var firstName:String
@@ -30,6 +30,11 @@ class Customer: IDisplay
     {
         bills.updateValue(bill, forKey: billID)
     }
+    
+    func calculateTotalBill() {
+        <#code#>
+    }
+    
     
     func dispaly() {
         print("Customer ID : \(customerID)")

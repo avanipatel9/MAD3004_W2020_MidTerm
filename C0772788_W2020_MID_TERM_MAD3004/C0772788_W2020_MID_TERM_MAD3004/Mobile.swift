@@ -34,6 +34,7 @@ class Mobile: Bill
     
     override func dispaly() {
         super.dispaly()
+        calculateTotalBill()
         print("Bill Amount : \(billAmount)")
         print("Manufacturer Name : \(mobileManufacturerName)")
         print("Plan Name : \(planName)")

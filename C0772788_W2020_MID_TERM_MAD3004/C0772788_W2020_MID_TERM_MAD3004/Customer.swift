@@ -7,8 +7,9 @@
 //
 
 import Foundation
-class Customer
+class Customer: IDisplay
 {
+    
     var customerID:Int
     var firstName:String
     var lastName:String
@@ -24,6 +25,10 @@ class Customer
         self.firstName=firstName
         self.lastName=lastName
         self.emailID=emailID
+    }
+    
+    func dispaly() {
+        <#code#>
     }
 
 }

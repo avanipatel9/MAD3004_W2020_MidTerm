@@ -33,7 +33,13 @@ class Mobile: Bill
     }
     
     override func dispaly() {
-        <#code#>
+        super.dispaly()
+        print("Bill Amount : \(billAmount)")
+        print("Manufacturer Name : \(mobileManufacturerName)")
+        print("Plan Name : \(planName)")
+        print("Mobile Number : \(mobileNumber)")
+        print("Internet Usage : \(internetGBUsed)")
+        print("Minutes Usage : \(minuteUsed)")
     }
     
 }

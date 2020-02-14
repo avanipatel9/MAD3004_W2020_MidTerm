@@ -11,6 +11,7 @@
 		471E92CD23F61131008F48BA /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E92CC23F61131008F48BA /* Internet.swift */; };
 		471E92CF23F61183008F48BA /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E92CE23F61183008F48BA /* Hydro.swift */; };
 		471E92D123F61259008F48BA /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E92D023F61259008F48BA /* IDisplay.swift */; };
+		471E92D323F613B2008F48BA /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E92D223F613B2008F48BA /* Customer.swift */; };
 		47EDC9F323F509DD007AED96 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDC9F223F509DD007AED96 /* main.swift */; };
 		47EDC9FA23F50AC0007AED96 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDC9F923F50AC0007AED96 /* Bill.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		471E92CC23F61131008F48BA /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
 		471E92CE23F61183008F48BA /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 		471E92D023F61259008F48BA /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
+		471E92D223F613B2008F48BA /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		47EDC9EF23F509DD007AED96 /* C0772788_W2020_MID_TERM_MAD3004 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = C0772788_W2020_MID_TERM_MAD3004; sourceTree = BUILT_PRODUCTS_DIR; };
 		47EDC9F223F509DD007AED96 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		47EDC9F923F50AC0007AED96 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				471E92CC23F61131008F48BA /* Internet.swift */,
 				471E92CE23F61183008F48BA /* Hydro.swift */,
 				471E92D023F61259008F48BA /* IDisplay.swift */,
+				471E92D223F613B2008F48BA /* Customer.swift */,
 			);
 			path = C0772788_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				471E92CF23F61183008F48BA /* Hydro.swift in Sources */,
+				471E92D323F613B2008F48BA /* Customer.swift in Sources */,
 				47EDC9FA23F50AC0007AED96 /* Bill.swift in Sources */,
 				471E92D123F61259008F48BA /* IDisplay.swift in Sources */,
 				47EDC9F323F509DD007AED96 /* main.swift in Sources */,

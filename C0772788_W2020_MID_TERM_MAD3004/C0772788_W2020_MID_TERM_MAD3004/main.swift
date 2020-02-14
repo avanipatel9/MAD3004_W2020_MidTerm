@@ -42,4 +42,16 @@ customers.append(c2)
 customers.append(c3)
 customers.append(c4)
 
+if customers.count==0
+{
+    print("There are not any customer yet")
+}
+else
+{
+    print("---------------List Of Customers---------------")
+    for i in customers
+    {
+        print("\(i.customerID) : \(i.fullName)")
+    }
+}
 

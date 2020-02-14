@@ -24,4 +24,6 @@ class Bill {
         self.billDate = billDate
         self.billType = billType
     }
+    
+
 }

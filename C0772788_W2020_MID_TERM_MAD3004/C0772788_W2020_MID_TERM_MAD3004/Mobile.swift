@@ -14,6 +14,9 @@ class Mobile: Bill
     var mobileNumber: Int
     var internetGBUsed: Double
     var minuteUsed: Int
+    var ratePerGB: Double = 7.5
+    var ratePerMinute: Double = 0.50
+    
     
     init(billID: Int, billDate: Date, billType: BillType, mobileManufacturerName: String, planName: String, mobileNumber: Int, internetGBUsed: Double, minuteUsed: Int) {
         self.mobileManufacturerName=mobileManufacturerName
@@ -23,4 +26,10 @@ class Mobile: Bill
         self.minuteUsed=minuteUsed
         super.init(billID: billID, billDate: billDate, billType: billType)
     }
+    
+    private func calculateMobileBill()-> Double
+    {
+         return internetGBUsed*ratePerGB + Double(minuteUsed)*ratePerMinute
+    }
+    
 }

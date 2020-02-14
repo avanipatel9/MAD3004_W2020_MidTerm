@@ -10,10 +10,20 @@ import Foundation
 class Hydro: Bill {
     var agencyName: String
     var unitConsumed: Int
+    var ratePerUnit: Double = 20.0
+    var totalHydroBill : Double
+    {
+        self.calculateBillHydro()
+    }
     
     init(billID: Int, billDate: Date, billType: BillType, agencyName: String, unitConsumed: Int) {
         self.agencyName=agencyName
         self.unitConsumed=unitConsumed
         super.init(billID: billID, billDate: billDate, billType: billType)
+    }
+    
+    func calculateBillHydro()-> Double
+    {
+        return Double(unitConsumed)*ratePerUnit
     }
 }

@@ -26,8 +26,8 @@ class Hydro: Bill {
     override func dispaly() {
         super.dispaly()
         calculateTotalBill()
-        print("Bill Amount : \(billAmount)")
-        print("Agency Name : \(agencyName)")
-        print("Unit Consumed : \(unitConsumed)")
+        print("\t Bill Amount : \(billAmount.currency())")
+        print("\t Agency Name : \(agencyName)")
+        print("\t Unit Consumed : \(unitConsumed)")
     }
 }

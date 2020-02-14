@@ -27,9 +27,9 @@ class Internet: Bill {
     override func dispaly() {
         super.dispaly()
         calculateTotalBill()
-        print("Bill Amount : \(billAmount)")
-        print("Provider Name : \(providerName)")
-        print("Internet Usage : \(internetGBUsed)")
+        print("\t Bill Amount : \(billAmount.currency())")
+        print("\t Provider Name : \(providerName)")
+        print("\t Internet Usage : \(internetGBUsed.internetData())")
     }
     
 }

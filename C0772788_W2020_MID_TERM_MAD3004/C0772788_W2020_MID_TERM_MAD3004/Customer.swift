@@ -19,7 +19,6 @@ class Customer: IDisplay, CalculateBill
     var emailID:String
     lazy var bills = [String : Bill]()
     var totalBillToPay : Double = 0.0
-    var customers = [Customer]()
     
     init(customerID:Int, firstName:String, lastName:String, emailID:String) {
         self.customerID=customerID
@@ -44,14 +43,14 @@ class Customer: IDisplay, CalculateBill
         print("Customer ID : \(customerID)")
         print("Customer Name : \(fullName)")
         print("Customer Email ID : \(emailID)")
-        print("--------Bill Information--------")
+        print("-----------------------Bill Information-----------------------")
         
         for i in bills
         {
             i.value.dispaly()
         }
         
-        print("*********************************************")
+        print("************************************************************")
         
         if bills.count == 0
         {
@@ -60,10 +59,10 @@ class Customer: IDisplay, CalculateBill
         else
         {
             calculateTotalBill()
-            print("Total Bill Amount to Pay : \(totalBillToPay)")
+            print("\t \t Total Bill Amount to Pay : \(totalBillToPay.currency())")
         }
         
-        print("*********************************************")
+        print("************************************************************")
     }
 
 }

@@ -35,12 +35,12 @@ class Mobile: Bill
     override func dispaly() {
         super.dispaly()
         calculateTotalBill()
-        print("Bill Amount : \(billAmount)")
-        print("Manufacturer Name : \(mobileManufacturerName)")
-        print("Plan Name : \(planName)")
-        print("Mobile Number : \(mobileNumber)")
-        print("Internet Usage : \(internetGBUsed)")
-        print("Minutes Usage : \(minuteUsed)")
+        print("\t Bill Amount : \(billAmount.currency())")
+        print("\t Manufacturer Name : \(mobileManufacturerName)")
+        print("\t Plan Name : \(planName)")
+        print("\t Mobile Number : \(mobileNumber)")
+        print("\t Internet Usage : \(internetGBUsed.internetData())")
+        print("\t Minutes Usage : \(minuteUsed)")
     }
     
 }

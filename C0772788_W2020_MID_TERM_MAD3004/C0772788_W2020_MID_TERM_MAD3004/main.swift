@@ -8,6 +8,9 @@
 
 import Foundation
 
+let formatter = DateFormatter()
+formatter.dateFormat = "EEEE, dd MM, yyyy"
+
 var m1 = Mobile(billID: "MOB001", billDate: Date(), billType: BillType.MOBILE, mobileManufacturerName: "Galaxy Samsung", planName: "Prepaid Talk + Text plan", mobileNumber: 6786768907, internetGBUsed: 5.0, minuteUsed: 356)
 
 var i1 = Internet(billID: "NET001", billDate: Date(), billType: BillType.INTERNET, providerName: "Bell", internetGBUsed: 500.0)

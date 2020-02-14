@@ -8,5 +8,5 @@
 
 import Foundation
 
-print("Hello, World!")
-
+var c1 = Customer(customerID: 1, firstName: "Avani", lastName: "Patel", emailID: "anpatel36@yahoo.in")
+c1.dispaly()

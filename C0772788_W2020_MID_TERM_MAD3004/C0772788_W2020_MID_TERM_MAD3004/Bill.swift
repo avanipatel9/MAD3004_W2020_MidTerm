@@ -17,7 +17,7 @@ class Bill {
     var billID: Int
     var billDate: Date
     var billType: BillType
-    var totalBillAmount: Double = 0.0
+    var billAmount: Double = 0.0
     
     init(billID: Int, billDate: Date, billType: BillType) {
         self.billID = billID

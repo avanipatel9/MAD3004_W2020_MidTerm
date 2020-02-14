@@ -28,7 +28,43 @@ class Customer: IDisplay
     }
     
     func dispaly() {
-        <#code#>
+        print("Customer ID : \(customerID)")
+        print("Customer Name : \(fullName)")
+        print("Customer Email ID : \(emailID)")
+        print("--------Bill Information--------")
+        print("**********************************")
+        for (billID, bill) in bills
+        {
+            print("Bill ID : \(billID)")
+            print("Bill Date : \(bill.billDate)")
+            print("Bill Type : \(bill.billType)")
+            print("Bill Amount : \(bill.billAmount)")
+            
+            switch bill.billType
+            {
+                case BillType.HYDRO:
+                    print("Agency Name : ")
+                    print("Unit Consumed : ")
+                
+                case BillType.INTERNET:
+                    print("Provider Name : ")
+                    print("Internet Usage : ")
+            
+                case BillType.MOBILE:
+                    print("Manufacturer Name : ")
+                    print("Plan Name : ")
+                    print("Mobile Number : ")
+                    print("Internet Usage : ")
+                    print("Minutes Usage : ")
+                default:
+                    ""
+                    //print("*************This Customer has no bills******************")
+            }
+            
+            print("*********************************************")
+            print("Total Bill Amount to Pay : ")
+            
+        }
     }
 
 }

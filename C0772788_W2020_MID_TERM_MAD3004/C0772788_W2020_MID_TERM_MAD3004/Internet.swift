@@ -19,8 +19,10 @@ class Internet: Bill {
         super.init(billID: billID, billDate: billDate, billType: billType)
     }
     
-    private func calculateInternetBill()-> Double
+    func calculateInternetBill()
     {
-            return internetGBUsed*ratePerGB
+        self.billAmount = internetGBUsed*ratePerGB
     }
+    
+    
 }

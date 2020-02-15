@@ -14,10 +14,10 @@ var m1 = Mobile(billID: "MOB001", billDate: Date.from(year: 2019, month: 01, day
 
 var i1 = Internet(billID: "NET001", billDate: Date.from(year: 2018, month: 07, day: 29) ?? Date(), billType: BillType.INTERNET, providerName: "Bell", internetGBUsed: 500.0)
 var i2 = Internet(billID: "NET002", billDate: Date.from(year: 2018, month: 12, day: 17) ?? Date(), billType: BillType.INTERNET, providerName: "Roger", internetGBUsed: 300)
-var i3 = Internet(billID: "NET003", billDate: Date(), billType: BillType.INTERNET, providerName: "Bell", internetGBUsed: 250)
+var i3 = Internet(billID: "NET003", billDate: Date.from(year: 2020, month: 01, day: 31) ?? Date(), billType: BillType.INTERNET, providerName: "Bell", internetGBUsed: 250)
 
-var h1 = Hydro(billID: "HYD001", billDate: Date(), billType: BillType.HYDRO, agencyName: "Planet Energy", unitConsumed: 29)
-var h2 = Hydro(billID: "HYD002", billDate: Date(), billType: BillType.HYDRO, agencyName: "Planet Energy", unitConsumed: 50)
+var h1 = Hydro(billID: "HYD001", billDate: Date.from(year: 2019, month: 04, day: 01) ?? Date(), billType: BillType.HYDRO, agencyName: "Planet Energy", unitConsumed: 29)
+var h2 = Hydro(billID: "HYD002", billDate: Date.from(year: 2019, month: 10, day: 12) ?? Date(), billType: BillType.HYDRO, agencyName: "Planet Energy", unitConsumed: 50)
 
 
 var c1 = Customer(customerID: 1, firstName: "Avani", lastName: "Patel", emailID: "aghkggk@gmail.com")

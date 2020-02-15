@@ -33,7 +33,7 @@ class Bill: CalculateBill, IDisplay {
     func dispaly() {
         print("**********************************")
         print("\t Bill ID : \(billID)")
-        print("\t Bill Date : \(billDate)")
+        print("\t Bill Date : \(billDate.getForamttedDate())")
         print("\t Bill Type : \(billType)")
     }
     

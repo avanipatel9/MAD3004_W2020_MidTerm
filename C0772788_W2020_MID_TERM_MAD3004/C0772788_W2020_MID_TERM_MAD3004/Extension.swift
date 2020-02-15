@@ -38,16 +38,26 @@ extension Int
     }
 }
 
+
+
 extension Date
 {
-//    func dateFormatter() -> Date
-//    {
-//        let formatter = DateFormatter()
-//        formatter.dateFormat = "EEEE, dd MM, yyyy"
-//        if let date = formatter.date(from: String(self))
-//        {
-//          print(date)
-//        }
-//    }
+    public func getForamttedDate() -> String
+    {
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.dateFormat = "EEEE, dd MMMM, yyyy"
+        let formattedDate = dateFormatterPrint.string(from: self)
+        return formattedDate
+    }
+    
+    static func from(year: Int, month: Int, day: Int) -> Date?
+    {
+        let calendar = Calendar(identifier: .gregorian)
+        var dateComponents = DateComponents()
+        dateComponents.year = year
+        dateComponents.month = month
+        dateComponents.day = day
+        return calendar.date(from: dateComponents) ?? nil
+    }
 }
 

@@ -50,7 +50,7 @@ class Customer: IDisplay, CalculateBill
         print("Customer ID : \(customerID)")
         print("Customer Name : \(fullName)")
         print("Customer Email ID : \(emailID)")
-        print("-------------------Bill Information-------------------")
+        print("--------------------Bill Information-------------------")
         
         for i in bills
         {

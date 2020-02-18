@@ -9,7 +9,7 @@
 import Foundation
 
 var m1 = Mobile(billID: "MOB001", billDate: Date.from(year: 2019, month: 01, day: 20) ?? Date(), billType: BillType.MOBILE, mobileManufacturerName: "Galaxy Samsung", planName: "Prepaid Talk + Text plan", mobileNumber: "+1(467)-345-6789", internetGBUsed: 5.0, minuteUsed: 356)
-
+var m2 = Mobile(billID: "MOB002", billDate: Date.from(year: 2018, month: 08, day: 15) ?? Date(), billType: BillType.MOBILE, mobileManufacturerName: "Apple", planName: "Prepaid + Text plan", mobileNumber: "6471234567", internetGBUsed: 2.0, minuteUsed: 250)
 
 
 var i1 = Internet(billID: "NET001", billDate: Date.from(year: 2018, month: 07, day: 29) ?? Date(), billType: BillType.INTERNET, providerName: "Bell", internetGBUsed: 500.0)
@@ -29,6 +29,7 @@ c1.addBill(bill: h1, billID: h1.billID)
 var c2 = Customer(customerID: 2, firstName: "Charmi", lastName: "Patel", emailID: "gadgkgkg@gmailcom")
 c2.addBill(bill: i2, billID: i2.billID)
 c2.addBill(bill: i3, billID: i3.billID)
+c2.addBill(bill: m2, billID: m2.billID)
 //c2.display()
 
 var c3 = Customer(customerID: 3, firstName: "Shreya", lastName: "Vaghasiya", emailID: "utweiri@.com")
@@ -94,4 +95,3 @@ print("-------------------------------------------------------")
 print("Enter Customer ID : ", separator: "", terminator: " ")
 let customerID = Int(readLine() ?? "0")
     getCustomerByID(id: customerID)
-    

@@ -19,11 +19,13 @@ var i3 = Internet(billID: "NET003", billDate: Date.from(year: 2020, month: 01, d
 var h1 = Hydro(billID: "HYD001", billDate: Date.from(year: 2019, month: 04, day: 01) ?? Date(), billType: BillType.HYDRO, agencyName: "Planet Energy", unitConsumed: 29)
 var h2 = Hydro(billID: "HYD002", billDate: Date.from(year: 2019, month: 10, day: 12) ?? Date(), billType: BillType.HYDRO, agencyName: "Planet Energy", unitConsumed: 50)
 
+var ins1 = Insurance(billID: "INS001", billDate: Date.from(year: 2019, month: 08, day: 09) ?? Date(), billType: BillType.INSURANCE, insuranceProviderName: "Rogers", insuranceType: InsuranceType.CAR, startDate: Date.from(year: 2019, month: 08, day: 09) ?? Date(), endDate: Date.from(year: 2021, month: 08, day: 09) ?? Date())
 
 var c1 = Customer(customerID: 1, firstName: "Avani", lastName: "Patel", emailID: "aghkggk@gmail.com")
 c1.addBill(bill: m1, billID: m1.billID)
 c1.addBill(bill: i1, billID: i1.billID)
 c1.addBill(bill: h1, billID: h1.billID)
+c1.addBill(bill: ins1, billID: ins1.billID)
 //c1.display()
 
 var c2 = Customer(customerID: 2, firstName: "Charmi", lastName: "Patel", emailID: "gadgkgkg@gmailcom")

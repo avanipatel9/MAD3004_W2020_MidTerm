@@ -45,18 +45,18 @@ customers.updateValue(c2, forKey: c2.customerID)
 customers.updateValue(c3, forKey: c3.customerID)
 customers.updateValue(c4, forKey: c4.customerID)
 
-if customers.count==0
-{
-    print("There are not any customer yet")
-}
-else
-{
-    print("-------------------List Of Customers-------------------")
-    for i in customers
-    {
-        print("\(i.key) : \(i.value.fullName)")
-    }
-}
+//if customers.count==0
+//{
+//    print("There are not any customer yet")
+//}
+//else
+//{
+//    print("-------------------List Of Customers-------------------")
+//    for i in customers
+//    {
+//        print("\(i.key) : \(i.value.fullName)")
+//    }
+//}
 
 func  getCustomerByID(id : Int)-> Customer?
 {
@@ -72,26 +72,42 @@ func  getCustomerByID(id : Int)-> Customer?
 
 print("*******************************************************")
 print("-------------------------------------------------------")
-//print("Enter Customer ID : ")
-print("Enter Customer ID : ", separator: "", terminator: " ")
-let customerID = Int(readLine() ?? "0")
+print("To Display all Customer Details : Please enter 1")
+print("To Get Customer by ID : Please enter 2")
 print("-------------------------------------------------------")
-if customerID != nil && customerID != 0
+print("Enter choice from above Menu : ", separator: "", terminator: " ")
+let choice = Int(readLine() ?? "0")
+switch choice
 {
-    if let tempCustomer = getCustomerByID(id: customerID!)
+case 1 : c1.display()
+        c2.display()
+        c3.display()
+        c4.display()
+    
+case 2 :
+    print("-------------------------------------------------------")
+    print("Enter Customer ID : ", separator: "", terminator: " ")
+    let customerID = Int(readLine() ?? "0")
+    print("-------------------------------------------------------")
+    if customerID != nil && customerID != 0
     {
-        tempCustomer.display()
-        print("-------------------------------------------------------")
+        if let tempCustomer = getCustomerByID(id: customerID!)
+        {
+            tempCustomer.display()
+            print("-------------------------------------------------------")
+        }
+        else
+        {
+            print("Customer with ID \(customerID!) doesn't exist")
+            print("-------------------------------------------------------")
+        }
     }
     else
     {
-        print("Customer with ID \(String(describing: customerID)) doesn't exist")
+        print("Customer ID should be valid number only and strats from 1")
         print("-------------------------------------------------------")
     }
+default : print("Enter valid choice number from Given Menu")
 }
-else
-{
-    print("Customer ID should be valid number only and strats from 1")
-    print("-------------------------------------------------------")
-}
+
 

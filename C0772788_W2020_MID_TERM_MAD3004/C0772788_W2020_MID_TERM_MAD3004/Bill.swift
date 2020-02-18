@@ -10,7 +10,7 @@ import Foundation
 
 enum BillType
 {
-    case INTERNET, MOBILE, HYDRO
+    case INTERNET, MOBILE, HYDRO, INSURANCE
 }
 
 class Bill: CalculateBill, IDisplay {

@@ -39,11 +39,11 @@ c3.addBill(bill: h2, billID: h2.billID)
 var c4 = Customer(customerID: 4, firstName: "Jyothi", lastName: "Thomas", emailID: "cxnbfjfgmail.com")
 //c4.display()
 
-var customers = [Customer]()
-customers.append(c1)
-customers.append(c2)
-customers.append(c3)
-customers.append(c4)
+var customers = [Int : Customer]()
+customers.updateValue(c1, forKey: c1.customerID)
+customers.updateValue(c2, forKey: c2.customerID)
+customers.updateValue(c3, forKey: c3.customerID)
+customers.updateValue(c4, forKey: c4.customerID)
 
 if customers.count==0
 {
@@ -54,38 +54,19 @@ else
     print("-------------------List Of Customers-------------------")
     for i in customers
     {
-        print("\(i.customerID) : \(i.fullName)")
+        print("\(i.key) : \(i.value.fullName)")
     }
 }
 
-func  getCustomerByID(id : Int?)
+func  getCustomerByID(id : Int)-> Customer?
 {
-    if id != nil && id != 0
+    if let tempCustomer = customers[id]
     {
-        for i in customers
-        {
-            if id == i.customerID
-            {
-                i.display()
-                print("*******************************************************")
-                
-                if i.bills.count == 0
-                {
-                    print("This Customer has no bills")
-                }
-                else
-                {
-                    i.calculateTotalBill()
-                    print("\t \t Total Bill Amount to Pay : \(i.totalBillToPay.currency())")
-                }
-                
-                print("*******************************************************")
-            }
-        }
+        return tempCustomer;
     }
     else
     {
-        print("Customer ID should be valid number only and strats from 1")
+        return nil
     }
 }
 
@@ -94,4 +75,23 @@ print("-------------------------------------------------------")
 //print("Enter Customer ID : ")
 print("Enter Customer ID : ", separator: "", terminator: " ")
 let customerID = Int(readLine() ?? "0")
-    getCustomerByID(id: customerID)
+print("-------------------------------------------------------")
+if customerID != nil && customerID != 0
+{
+    if let tempCustomer = getCustomerByID(id: customerID!)
+    {
+        tempCustomer.display()
+        print("-------------------------------------------------------")
+    }
+    else
+    {
+        print("Customer with ID \(String(describing: customerID)) doesn't exist")
+        print("-------------------------------------------------------")
+    }
+}
+else
+{
+    print("Customer ID should be valid number only and strats from 1")
+    print("-------------------------------------------------------")
+}
+

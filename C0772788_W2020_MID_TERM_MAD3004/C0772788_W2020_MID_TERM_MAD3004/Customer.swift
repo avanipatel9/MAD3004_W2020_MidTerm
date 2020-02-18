@@ -56,6 +56,21 @@ class Customer: IDisplay, CalculateBill
         {
             i.value.display()
         }
+        
+        print("*******************************************************")
+        
+        if bills.count == 0
+        {
+            print("This Customer has no bills")
+        }
+        else
+        {
+            calculateTotalBill()
+            print("\t \t Total Bill Amount to Pay : \(totalBillToPay.currency())")
+        }
+        
+        print("*******************************************************")
+        
     }
     
     

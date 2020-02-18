@@ -38,31 +38,30 @@ class Customer: IDisplay, CalculateBill
         }
     }
     
-    
-    func dispaly() {
+    func display()
+    {
+        print("-------------------------------------------------------")
         print("Customer ID : \(customerID)")
         print("Customer Name : \(fullName)")
-        print("Customer Email ID : \(emailID)")
-        print("-----------------------Bill Information-----------------------")
         
-        for i in bills
+        if emailID.isValidEmail() == true
         {
-            i.value.dispaly()
-        }
-        
-        print("************************************************************")
-        
-        if bills.count == 0
-        {
-            print("This Customer has no bills")
+            print("Customer Email ID : \(emailID)")
         }
         else
         {
-            calculateTotalBill()
-            print("\t \t Total Bill Amount to Pay : \(totalBillToPay.currency())")
+            print("Email ID : Please give valid  email id")
         }
         
-        print("************************************************************")
+        
+        print("-------------------Bill Information-------------------")
+        
+        for i in bills
+        {
+            i.value.display()
+        }
     }
+    
+    
 
 }

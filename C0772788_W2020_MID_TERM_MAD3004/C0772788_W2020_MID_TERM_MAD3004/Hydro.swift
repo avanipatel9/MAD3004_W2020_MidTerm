@@ -23,8 +23,8 @@ class Hydro: Bill {
         self.billAmount = Double(unitConsumed)*ratePerUnit
     }
     
-    override func dispaly() {
-        super.dispaly()
+    override func display() {
+        super.display()
         calculateTotalBill()
         print("\t Bill Amount : \(billAmount.currency())")
         print("\t Agency Name : \(agencyName)")

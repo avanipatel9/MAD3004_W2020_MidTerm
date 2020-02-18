@@ -32,8 +32,8 @@ class Mobile: Bill
         self.billAmount = internetGBUsed*ratePerGB + Double(minuteUsed)*ratePerMinute
     }
     
-    override func dispaly() {
-        super.dispaly()
+    override func display() {
+        super.display()
         calculateTotalBill()
         print("\t Bill Amount : \(billAmount.currency())")
         print("\t Manufacturer Name : \(mobileManufacturerName)")

@@ -24,8 +24,8 @@ class Internet: Bill {
         self.billAmount = internetGBUsed*ratePerGB
     }
     
-    override func dispaly() {
-        super.dispaly()
+    override func display() {
+        super.display()
         calculateTotalBill()
         print("\t Bill Amount : \(billAmount.currency())")
         print("\t Provider Name : \(providerName)")

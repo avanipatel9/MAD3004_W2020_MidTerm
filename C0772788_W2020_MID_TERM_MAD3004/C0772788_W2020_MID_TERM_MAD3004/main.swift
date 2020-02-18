@@ -24,19 +24,19 @@ var c1 = Customer(customerID: 1, firstName: "Avani", lastName: "Patel", emailID:
 c1.addBill(bill: m1, billID: m1.billID)
 c1.addBill(bill: i1, billID: i1.billID)
 c1.addBill(bill: h1, billID: h1.billID)
-c1.dispaly()
+//c1.display()
 
 var c2 = Customer(customerID: 2, firstName: "Charmi", lastName: "Patel", emailID: "gadgkgkg@gmail.com")
 c2.addBill(bill: i2, billID: i2.billID)
 c2.addBill(bill: i3, billID: i3.billID)
-c2.dispaly()
+//c2.display()
 
 var c3 = Customer(customerID: 3, firstName: "Shreya", lastName: "Vaghasiya", emailID: "utweiri@gmail.com")
 c3.addBill(bill: h2, billID: h2.billID)
-c3.dispaly()
+//c3.display()
 
-var c4 = Customer(customerID: 4, firstName: "Jyothi", lastName: "Thomas", emailID: "cxnbfjf@gmail.com")
-c4.dispaly()
+var c4 = Customer(customerID: 4, firstName: "Jyothi", lastName: "Thomas", emailID: "cxnbfjf@gmailcom")
+//c4.display()
 
 var customers = [Customer]()
 customers.append(c1)
@@ -50,10 +50,48 @@ if customers.count==0
 }
 else
 {
-    print("---------------List Of Customers---------------")
+    print("-------------------List Of Customers-------------------")
     for i in customers
     {
         print("\(i.customerID) : \(i.fullName)")
     }
 }
 
+func  getCustomerByID(id : Int?)
+{
+    if id != nil && id != 0
+    {
+        for i in customers
+        {
+            if id == i.customerID
+            {
+                i.display()
+                print("*******************************************************")
+                
+                if i.bills.count == 0
+                {
+                    print("This Customer has no bills")
+                }
+                else
+                {
+                    i.calculateTotalBill()
+                    print("\t \t Total Bill Amount to Pay : \(i.totalBillToPay.currency())")
+                }
+                
+                print("*******************************************************")
+            }
+        }
+    }
+    else
+    {
+        print("Customer ID should be valid number only and strats from 1")
+    }
+}
+
+print("*******************************************************")
+print("-------------------------------------------------------")
+//print("Enter Customer ID : ")
+print("Enter Customer ID : ", separator: "", terminator: " ")
+let customerID = Int(readLine() ?? "0")
+    getCustomerByID(id: customerID)
+    

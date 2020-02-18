@@ -40,11 +40,19 @@ extension Int
 
 extension String
 {
-    func isValidEmail() -> Bool
+    func isValidEmail(email : String) -> String
     {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        return emailTest.evaluate(with: self)
+        let result = emailTest.evaluate(with: email)
+        if result == false
+        {
+            return "Invalid Email ID => \(email)"
+        }
+        else
+        {
+            return email
+        }
     }
     
     func isValidPhone(phone : String) -> String {
@@ -53,7 +61,7 @@ extension String
         let result = phoneTest.evaluate(with: phone)
         if result == false
         {
-            return "Invalid Phone Number \(phone)"
+            return "Invalid Phone Number => \(phone)"
         }
         else
         {

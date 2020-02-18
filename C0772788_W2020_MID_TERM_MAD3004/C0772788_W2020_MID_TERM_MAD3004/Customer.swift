@@ -24,7 +24,7 @@ class Customer: IDisplay, CalculateBill
         self.customerID=customerID
         self.firstName=firstName
         self.lastName=lastName
-        self.emailID=emailID
+        self.emailID=emailID.isValidEmail(email: emailID)
     }
     
     func addBill(bill: Bill, billID: String)
@@ -43,17 +43,7 @@ class Customer: IDisplay, CalculateBill
         print("-------------------------------------------------------")
         print("Customer ID : \(customerID)")
         print("Customer Name : \(fullName)")
-        
-        if emailID.isValidEmail() == true
-        {
-            print("Customer Email ID : \(emailID)")
-        }
-        else
-        {
-            print("Email ID : Please give valid  email id")
-        }
-        
-        
+        print("Customer Email ID : \(emailID)")
         print("-------------------Bill Information-------------------")
         
         for i in bills

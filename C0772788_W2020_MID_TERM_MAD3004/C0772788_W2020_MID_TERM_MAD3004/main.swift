@@ -26,16 +26,16 @@ c1.addBill(bill: i1, billID: i1.billID)
 c1.addBill(bill: h1, billID: h1.billID)
 //c1.display()
 
-var c2 = Customer(customerID: 2, firstName: "Charmi", lastName: "Patel", emailID: "gadgkgkg@gmail.com")
+var c2 = Customer(customerID: 2, firstName: "Charmi", lastName: "Patel", emailID: "gadgkgkg@gmailcom")
 c2.addBill(bill: i2, billID: i2.billID)
 c2.addBill(bill: i3, billID: i3.billID)
 //c2.display()
 
-var c3 = Customer(customerID: 3, firstName: "Shreya", lastName: "Vaghasiya", emailID: "utweiri@gmail.com")
+var c3 = Customer(customerID: 3, firstName: "Shreya", lastName: "Vaghasiya", emailID: "utweiri@.com")
 c3.addBill(bill: h2, billID: h2.billID)
 //c3.display()
 
-var c4 = Customer(customerID: 4, firstName: "Jyothi", lastName: "Thomas", emailID: "cxnbfjf@gmailcom")
+var c4 = Customer(customerID: 4, firstName: "Jyothi", lastName: "Thomas", emailID: "cxnbfjfgmail.com")
 //c4.display()
 
 var customers = [Customer]()

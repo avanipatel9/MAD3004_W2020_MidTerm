@@ -45,18 +45,7 @@ customers.updateValue(c2, forKey: c2.customerID)
 customers.updateValue(c3, forKey: c3.customerID)
 customers.updateValue(c4, forKey: c4.customerID)
 
-//if customers.count==0
-//{
-//    print("There are not any customer yet")
-//}
-//else
-//{
-//    print("-------------------List Of Customers-------------------")
-//    for i in customers
-//    {
-//        print("\(i.key) : \(i.value.fullName)")
-//    }
-//}
+
 
 func  getCustomerByID(id : Int)-> Customer?
 {
@@ -85,6 +74,19 @@ case 1 : c1.display()
         c4.display()
     
 case 2 :
+    print("-------------------------------------------------------")
+    if customers.count==0
+    {
+        print("There are not any customer yet")
+    }
+    else
+    {
+        print("-------------------List Of Customers-------------------")
+        for i in customers
+        {
+            print("\(i.key) : \(i.value.fullName)")
+        }
+    }
     print("-------------------------------------------------------")
     print("Enter Customer ID : ", separator: "", terminator: " ")
     let customerID = Int(readLine() ?? "0")

@@ -46,6 +46,20 @@ extension String
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: self)
     }
+    
+    func isValidPhone(phone : String) -> String {
+        let PHONE_REGEX = "^(?:\\+?1[-.●]?)?\\(?([0-9]{3})\\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$"
+        let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
+        let result = phoneTest.evaluate(with: phone)
+        if result == false
+        {
+            return "Invalid Phone Number \(phone)"
+        }
+        else
+        {
+            return phone
+        }
+    }
 }
 
 

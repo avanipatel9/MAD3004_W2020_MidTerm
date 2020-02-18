@@ -11,17 +11,17 @@ class Mobile: Bill
 {
     var mobileManufacturerName: String
     var planName: String
-    var mobileNumber: Int
+    var mobileNumber: String
     var internetGBUsed: Double
     var minuteUsed: Int
     var ratePerGB: Double = 7.5
     var ratePerMinute: Double = 0.50
     
     
-    init(billID: String, billDate: Date, billType: BillType, mobileManufacturerName: String, planName: String, mobileNumber: Int, internetGBUsed: Double, minuteUsed: Int) {
+    init(billID: String, billDate: Date, billType: BillType, mobileManufacturerName: String, planName: String, mobileNumber: String, internetGBUsed: Double, minuteUsed: Int) {
         self.mobileManufacturerName=mobileManufacturerName
         self.planName=planName
-        self.mobileNumber=mobileNumber
+        self.mobileNumber=mobileNumber.isValidPhone(phone: mobileNumber)
         self.internetGBUsed=internetGBUsed
         self.minuteUsed=minuteUsed
         super.init(billID: billID, billDate: billDate, billType: billType)

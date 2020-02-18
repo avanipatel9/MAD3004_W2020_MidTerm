@@ -14,6 +14,7 @@
 		471E92D323F613B2008F48BA /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E92D223F613B2008F48BA /* Customer.swift */; };
 		471E92D523F63768008F48BA /* CalculateBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E92D423F63768008F48BA /* CalculateBill.swift */; };
 		4736928823F747A9002886E5 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4736928723F747A9002886E5 /* Extension.swift */; };
+		47472EF023FC56B5007E9A4C /* Insurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47472EEF23FC56B5007E9A4C /* Insurance.swift */; };
 		47EDC9F323F509DD007AED96 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDC9F223F509DD007AED96 /* main.swift */; };
 		47EDC9FA23F50AC0007AED96 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDC9F923F50AC0007AED96 /* Bill.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		471E92D223F613B2008F48BA /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		471E92D423F63768008F48BA /* CalculateBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateBill.swift; sourceTree = "<group>"; };
 		4736928723F747A9002886E5 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		47472EEF23FC56B5007E9A4C /* Insurance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insurance.swift; sourceTree = "<group>"; };
 		47EDC9EF23F509DD007AED96 /* C0772788_W2020_MID_TERM_MAD3004 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = C0772788_W2020_MID_TERM_MAD3004; sourceTree = BUILT_PRODUCTS_DIR; };
 		47EDC9F223F509DD007AED96 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		47EDC9F923F50AC0007AED96 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				471E92D223F613B2008F48BA /* Customer.swift */,
 				471E92D423F63768008F48BA /* CalculateBill.swift */,
 				4736928723F747A9002886E5 /* Extension.swift */,
+				47472EEF23FC56B5007E9A4C /* Insurance.swift */,
 			);
 			path = C0772788_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				47EDC9F323F509DD007AED96 /* main.swift in Sources */,
 				471E92CD23F61131008F48BA /* Internet.swift in Sources */,
 				471E92C923F60869008F48BA /* Mobile.swift in Sources */,
+				47472EF023FC56B5007E9A4C /* Insurance.swift in Sources */,
 				471E92D523F63768008F48BA /* CalculateBill.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

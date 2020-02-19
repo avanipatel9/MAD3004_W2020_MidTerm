@@ -28,13 +28,13 @@ c1.addBill(bill: h1, billID: h1.billID)
 c1.addBill(bill: ins1, billID: ins1.billID)
 //c1.display()
 
-var c2 = Customer(customerID: 2, firstName: "Charmi", lastName: "Patel", emailID: "gadgkgkg@gmailcom")
+var c2 = Customer(customerID: 2, firstName: "Charmi", lastName: "Patel", emailID: "gadgkgkg@gmail.com")
 c2.addBill(bill: i2, billID: i2.billID)
 c2.addBill(bill: i3, billID: i3.billID)
 c2.addBill(bill: m2, billID: m2.billID)
 //c2.display()
 
-var c3 = Customer(customerID: 3, firstName: "Shreya", lastName: "Vaghasiya", emailID: "utweiri@.com")
+var c3 = Customer(customerID: 3, firstName: "Shreya", lastName: "Vaghasiya", emailID: "utweiri@gmail.com")
 c3.addBill(bill: h2, billID: h2.billID)
 //c3.display()
 

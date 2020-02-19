@@ -8,5 +8,6 @@
 
 import Foundation
 enum CustomerError : Error {
-    case INVALIDEMAIL, INVALIDPHONENUMBER
+    case INVALIDEMAIL(emailID : String)
+    case INVALIDPHONENUMBER(phone : String)
 }
